@@ -1,0 +1,48 @@
+
+
+Data file for CT14 created based on top++ at NNLO+NNLL
+Prediction for 7 TeV
+
+[global]
+name = CT14
+[end global]
+
+
+The alpha_s dependence is not the right one, yet!!! This file should only be used
+for technical test, and for mtop extraction
+
+[nominal]
+#Format: <nominal> <scale up> <scale down> <pdf up> <pdf down>  PDF includes alpha_s!!
+#All errors as relative errors
+
+1.81672e+02 2.63056e-02 3.467238e-02 4.392675e-2  3.703939e-2 
+
+[end nominal]
+
+[mtop]
+
+166.5 218.266
+167.5 211.615 
+168.5 205.199
+169.5 199.004  
+171.5 187.248  
+172.5 181.672
+173.5 176.286
+174.5 171.083 
+177.5 156.507 
+178.5 151.972   
+
+[end mtop]
+
+
+[alpha_s]
+
+0.116 181.601
+0.117 181.601
+0.118 181.601
+0.119 181.601
+0.120 181.601
+0.121 181.601
+0.122 181.601
+
+[end alpha_s]
