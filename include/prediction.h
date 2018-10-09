@@ -65,6 +65,10 @@ public:
 
     bool setup()const{return nominal_;}
 
+    const double getRelPdfUp()const{return rel_pdfup_;}
+    const double getRelPdfDown()const{return rel_pdfdown_;}
+    const double getRelScaleUp()const{return rel_scaleup_;}
+    const double getRelScaleDown()const{return rel_scaledown_;}
 
 private:
 

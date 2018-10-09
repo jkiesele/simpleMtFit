@@ -1,0 +1,42 @@
+
+
+
+[global]
+name = ABMP16
+[end global]
+
+
+The alpha_s dependence is not the right one, yet!!! This file should only be used
+for technical test, and for mtop extraction
+
+[nominal]
+#Format: <nominal> <scale up> <scale down> <pdf up> <pdf down>  PDF includes alpha_s!!
+#All errors as relative errors
+
+750.826 0.05414969647  0.033495110  2.48059e-2  2.48059e-2 
+
+[end nominal]
+
+[mtop]
+166  888.759 
+168  839.701 
+170  793.796 
+172  750.826 
+174  710.57  
+176  672.798 
+178  637.388 
+
+[end mtop]
+
+
+[alpha_s]
+
+0.116 750.826 
+0.117 750.826
+0.118 750.826
+0.119 750.826
+0.120 750.826
+0.121 750.826
+0.122 750.826
+
+[end alpha_s]

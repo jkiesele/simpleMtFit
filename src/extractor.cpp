@@ -24,8 +24,14 @@ prediction * extractor::readPrediction(const std::string& file){
 }
 
 extractResult extractor::extractPriv(bool ismtop){
-    simpleFitter fitter;
-
+	simpleFitter fitter;
+	size_t freepara=0;
+	for(size_t i=0;i<priors_.size();i++){
+		if(priors_.at(i)==prior_free){
+			freepara=i;
+			break;
+		}
+	}
     std::vector<double> startparas={
             globals::default_mtop,
             globals::default_alphas,
@@ -33,6 +39,7 @@ extractResult extractor::extractPriv(bool ismtop){
     fitter.setParameters(startparas);
     ROOT::Math::Functor func(this,&extractor::toBeMinimized,startparas.size());
     fitter.setMinFunction(func);
+  //  fitter.setAsMinosParameter(freepara,true);
     //set parameter limits for limted paras FIXME
 
     fitter.fit();
@@ -40,13 +47,7 @@ extractResult extractor::extractPriv(bool ismtop){
     if(!fitter.wasSuccess())
         throw std::runtime_error("fit not successful");
 
-    size_t freepara=0;
-    for(size_t i=0;i<priors_.size();i++){
-        if(priors_.at(i)==prior_free){
-            freepara=i;
-            break;
-        }
-    }
+
     extractResult res;
 
     res.central =fitter.getParameter(freepara);
@@ -119,12 +120,19 @@ double extractor::toBeMinimized(const double* pars)const{
     else if(priors_.at(2) == prior_fixed0)
     	scale=0;
 
-    double delta7=globals::measured_xsec-pred.eval(mtop,alphas,scale,pdf);
+    double delta7=globals::measured_xsec-pred.eval(mtop,alphas,scale,0);
     double err7=globals::measured_errdown;
     if(delta7<0)
     	err7=globals::measured_errup;
+    double pdferr=pred.getRelPdfUp();
+    if(delta7<0)
+    	pdferr=pred.getRelPdfDown();
+    pdferr*=pred.eval(mtop,alphas,scale,0);
 
-    double out= (delta7/err7)*(delta7/err7);
+    pdferr*=pdferr;
+    err7*=err7;
+
+    double out= (delta7*delta7)/(pdferr+err7);
 
 
     for(size_t i=0;i<priors_.size();i++){

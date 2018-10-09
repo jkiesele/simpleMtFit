@@ -11,11 +11,11 @@
 
 namespace globals{
 
-const double measured_xsec=180.;
-const double measured_errdown=4;
-const double measured_errup=3;
+const double measured_xsec=815.;
+const double measured_errdown=35.2846;
+const double measured_errup=35.2846;
 
-const double default_mtop=172.5;
+const double default_mtop=172.;
 const double default_alphas=0.118;
 const double default_mtop_err=1;
 const double default_alphas_err=0.0012;

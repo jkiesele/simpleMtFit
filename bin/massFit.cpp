@@ -35,7 +35,7 @@ int main(int argc, char* argv[]){
 
 
 	std::cout << "mtop pred scan: ";
-	for(float mtop=166.5;mtop<176;mtop+=2){
+	for(float mtop=166.;mtop<176;mtop+=2){
 		std::cout << mtop<<":"<<tmp_ex.getPred().eval(mtop,globals::default_alphas,0,0)<<" ";
 	}
 

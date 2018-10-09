@@ -42,12 +42,12 @@ double prediction::eval(const double& mtop,const double& alphas,
 
     double deltascale=scale*rel_scaleup_*central;
     if(scale<0)
-        deltascale=-scale*rel_scaledown_*central;
+        deltascale=scale*rel_scaledown_*central;
 
 
     double deltapdf=pdf*rel_pdfup_*central;
     if(pdf<0)
-        deltapdf=-pdf*rel_pdfdown_*central;
+        deltapdf=pdf*rel_pdfdown_*central;
 
 
     return central+deltascale+deltapdf;
