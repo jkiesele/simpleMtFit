@@ -1,0 +1,295 @@
+
+
+#---------------------- Summary of the calculation ----------------------#
+# mt   central   pdf_min   pdf_max
+#172  842.403  815.2  870.985 : 0.0322921452  0.033929
+
+.
+m_top=172, Pdf member 101, muF=1, muR=1, sigma_tot=815.6 [pb].
+m_top=172, Pdf member 102, muF=1, muR=1, sigma_tot=870.39 [pb].
+
+
+
+
+
+
+
+m_top=172, Pdf member 0, muF=1, muR=1, sigma_tot=842.1 [pb].
+m_top=172, Pdf member 1, muF=1, muR=1, sigma_tot=848.215 [pb].
+m_top=172, Pdf member 2, muF=1, muR=1, sigma_tot=834.116 [pb].
+m_top=172, Pdf member 3, muF=1, muR=1, sigma_tot=845.225 [pb].
+m_top=172, Pdf member 4, muF=1, muR=1, sigma_tot=849.857 [pb].
+m_top=172, Pdf member 5, muF=1, muR=1, sigma_tot=840.54 [pb].
+m_top=172, Pdf member 6, muF=1, muR=1, sigma_tot=861.418 [pb].
+m_top=172, Pdf member 7, muF=1, muR=1, sigma_tot=834.607 [pb].
+m_top=172, Pdf member 8, muF=1, muR=1, sigma_tot=831.3 [pb].
+m_top=172, Pdf member 9, muF=1, muR=1, sigma_tot=842.737 [pb].
+m_top=172, Pdf member 10, muF=1, muR=1, sigma_tot=862.704 [pb].
+m_top=172, Pdf member 11, muF=1, muR=1, sigma_tot=847.609 [pb].
+m_top=172, Pdf member 12, muF=1, muR=1, sigma_tot=844.003 [pb].
+m_top=172, Pdf member 13, muF=1, muR=1, sigma_tot=834.509 [pb].
+m_top=172, Pdf member 14, muF=1, muR=1, sigma_tot=837.789 [pb].
+m_top=172, Pdf member 15, muF=1, muR=1, sigma_tot=834.094 [pb].
+m_top=172, Pdf member 16, muF=1, muR=1, sigma_tot=846.265 [pb].
+m_top=172, Pdf member 17, muF=1, muR=1, sigma_tot=853.916 [pb].
+m_top=172, Pdf member 18, muF=1, muR=1, sigma_tot=836.303 [pb].
+m_top=172, Pdf member 19, muF=1, muR=1, sigma_tot=826.861 [pb].
+m_top=172, Pdf member 20, muF=1, muR=1, sigma_tot=832.211 [pb].
+m_top=172, Pdf member 21, muF=1, muR=1, sigma_tot=828.56 [pb].
+m_top=172, Pdf member 22, muF=1, muR=1, sigma_tot=825.38 [pb].
+m_top=172, Pdf member 23, muF=1, muR=1, sigma_tot=827.563 [pb].
+m_top=172, Pdf member 24, muF=1, muR=1, sigma_tot=837.144 [pb].
+m_top=172, Pdf member 25, muF=1, muR=1, sigma_tot=830.34 [pb].
+m_top=172, Pdf member 26, muF=1, muR=1, sigma_tot=837.938 [pb].
+m_top=172, Pdf member 27, muF=1, muR=1, sigma_tot=842.655 [pb].
+m_top=172, Pdf member 28, muF=1, muR=1, sigma_tot=836.496 [pb].
+m_top=172, Pdf member 29, muF=1, muR=1, sigma_tot=850.487 [pb].
+m_top=172, Pdf member 30, muF=1, muR=1, sigma_tot=852.623 [pb].
+m_top=172, Pdf member 31, muF=1, muR=1, sigma_tot=847.763 [pb].
+m_top=172, Pdf member 32, muF=1, muR=1, sigma_tot=844.497 [pb].
+m_top=172, Pdf member 33, muF=1, muR=1, sigma_tot=836.014 [pb].
+m_top=172, Pdf member 34, muF=1, muR=1, sigma_tot=846.515 [pb].
+m_top=172, Pdf member 35, muF=1, muR=1, sigma_tot=846.071 [pb].
+m_top=172, Pdf member 36, muF=1, muR=1, sigma_tot=841.645 [pb].
+m_top=172, Pdf member 37, muF=1, muR=1, sigma_tot=836.475 [pb].
+m_top=172, Pdf member 38, muF=1, muR=1, sigma_tot=844.568 [pb].
+m_top=172, Pdf member 39, muF=1, muR=1, sigma_tot=843.212 [pb].
+m_top=172, Pdf member 40, muF=1, muR=1, sigma_tot=843.275 [pb].
+m_top=172, Pdf member 41, muF=1, muR=1, sigma_tot=847.371 [pb].
+m_top=172, Pdf member 42, muF=1, muR=1, sigma_tot=846.372 [pb].
+m_top=172, Pdf member 43, muF=1, muR=1, sigma_tot=849.005 [pb].
+m_top=172, Pdf member 44, muF=1, muR=1, sigma_tot=846.794 [pb].
+m_top=172, Pdf member 45, muF=1, muR=1, sigma_tot=842.181 [pb].
+m_top=172, Pdf member 46, muF=1, muR=1, sigma_tot=847.691 [pb].
+m_top=172, Pdf member 47, muF=1, muR=1, sigma_tot=836.627 [pb].
+m_top=172, Pdf member 48, muF=1, muR=1, sigma_tot=838.445 [pb].
+m_top=172, Pdf member 49, muF=1, muR=1, sigma_tot=843.209 [pb].
+m_top=172, Pdf member 50, muF=1, muR=1, sigma_tot=850.699 [pb].
+m_top=172, Pdf member 51, muF=1, muR=1, sigma_tot=841.086 [pb].
+m_top=172, Pdf member 52, muF=1, muR=1, sigma_tot=833.993 [pb].
+m_top=172, Pdf member 53, muF=1, muR=1, sigma_tot=843.131 [pb].
+m_top=172, Pdf member 54, muF=1, muR=1, sigma_tot=837.875 [pb].
+m_top=172, Pdf member 55, muF=1, muR=1, sigma_tot=833.903 [pb].
+m_top=172, Pdf member 56, muF=1, muR=1, sigma_tot=842.424 [pb].
+m_top=172, Pdf member 57, muF=1, muR=1, sigma_tot=835.661 [pb].
+m_top=172, Pdf member 58, muF=1, muR=1, sigma_tot=843.14 [pb].
+m_top=172, Pdf member 59, muF=1, muR=1, sigma_tot=846.402 [pb].
+m_top=172, Pdf member 60, muF=1, muR=1, sigma_tot=841.8 [pb].
+m_top=172, Pdf member 61, muF=1, muR=1, sigma_tot=841.62 [pb].
+m_top=172, Pdf member 62, muF=1, muR=1, sigma_tot=841.776 [pb].
+m_top=172, Pdf member 63, muF=1, muR=1, sigma_tot=831.058 [pb].
+m_top=172, Pdf member 64, muF=1, muR=1, sigma_tot=843.297 [pb].
+m_top=172, Pdf member 65, muF=1, muR=1, sigma_tot=834.341 [pb].
+m_top=172, Pdf member 66, muF=1, muR=1, sigma_tot=848.167 [pb].
+m_top=172, Pdf member 67, muF=1, muR=1, sigma_tot=829.655 [pb].
+m_top=172, Pdf member 68, muF=1, muR=1, sigma_tot=843.853 [pb].
+m_top=172, Pdf member 69, muF=1, muR=1, sigma_tot=838.378 [pb].
+m_top=172, Pdf member 70, muF=1, muR=1, sigma_tot=838.742 [pb].
+m_top=172, Pdf member 71, muF=1, muR=1, sigma_tot=846.323 [pb].
+m_top=172, Pdf member 72, muF=1, muR=1, sigma_tot=836.535 [pb].
+m_top=172, Pdf member 73, muF=1, muR=1, sigma_tot=842.399 [pb].
+m_top=172, Pdf member 74, muF=1, muR=1, sigma_tot=841.208 [pb].
+m_top=172, Pdf member 75, muF=1, muR=1, sigma_tot=848.376 [pb].
+m_top=172, Pdf member 76, muF=1, muR=1, sigma_tot=856.649 [pb].
+m_top=172, Pdf member 77, muF=1, muR=1, sigma_tot=838.907 [pb].
+m_top=172, Pdf member 78, muF=1, muR=1, sigma_tot=-inf [pb].
+m_top=172, Pdf member 79, muF=1, muR=1, sigma_tot=839.34 [pb].
+m_top=172, Pdf member 80, muF=1, muR=1, sigma_tot=854.269 [pb].
+m_top=172, Pdf member 81, muF=1, muR=1, sigma_tot=838.019 [pb].
+m_top=172, Pdf member 82, muF=1, muR=1, sigma_tot=846.265 [pb].
+m_top=172, Pdf member 83, muF=1, muR=1, sigma_tot=844.819 [pb].
+m_top=172, Pdf member 84, muF=1, muR=1, sigma_tot=837.734 [pb].
+m_top=172, Pdf member 85, muF=1, muR=1, sigma_tot=845.67 [pb].
+m_top=172, Pdf member 86, muF=1, muR=1, sigma_tot=846.752 [pb].
+m_top=172, Pdf member 87, muF=1, muR=1, sigma_tot=843.405 [pb].
+m_top=172, Pdf member 88, muF=1, muR=1, sigma_tot=855.464 [pb].
+m_top=172, Pdf member 89, muF=1, muR=1, sigma_tot=862.589 [pb].
+m_top=172, Pdf member 90, muF=1, muR=1, sigma_tot=845.218 [pb].
+m_top=172, Pdf member 91, muF=1, muR=1, sigma_tot=837.983 [pb].
+m_top=172, Pdf member 92, muF=1, muR=1, sigma_tot=849.234 [pb].
+m_top=172, Pdf member 93, muF=1, muR=1, sigma_tot=845.481 [pb].
+m_top=172, Pdf member 94, muF=1, muR=1, sigma_tot=841.841 [pb].
+m_top=172, Pdf member 95, muF=1, muR=1, sigma_tot=841.064 [pb].
+m_top=172, Pdf member 96, muF=1, muR=1, sigma_tot=834.087 [pb].
+m_top=172, Pdf member 97, muF=1, muR=1, sigma_tot=856.624 [pb].
+m_top=172, Pdf member 98, muF=1, muR=1, sigma_tot=846.246 [pb].
+m_top=172, Pdf member 99, muF=1, muR=1, sigma_tot=831.872 [pb].
+m_top=172, Pdf member 100, muF=1, muR=1, sigma_tot=836.781 [pb].
+
+m_top=172, Pdf member 101, muF=1, muR=1, sigma_tot=815.605 [pb].
+m_top=172, Pdf member 102, muF=1, muR=1, sigma_tot=870.394 [pb].
+
+
+
+842.1 
+848.215 
+834.116 
+845.225 
+849.857 
+840.54 
+861.418 
+834.607 
+831.3 
+842.737 
+862.704 
+847.609 
+844.003 
+834.509 
+837.789 
+834.094 
+846.265 
+853.916 
+836.303 
+826.861 
+832.211 
+828.56 
+825.38 
+827.563 
+837.144 
+830.34 
+837.938 
+842.655 
+836.496 
+850.487 
+852.623 
+847.763 
+844.497 
+836.014 
+846.515 
+846.071 
+841.645 
+836.475 
+844.568 
+843.212 
+843.275 
+847.371 
+846.372 
+849.005 
+846.794 
+842.181 
+847.691 
+836.627 
+838.445 
+843.209 
+850.699 
+841.086 
+833.993 
+843.131 
+837.875 
+833.903 
+842.424 
+835.661 
+843.14 
+846.402 
+841.8 
+841.62 
+841.776 
+831.058 
+843.297 
+834.341 
+848.167 
+829.655 
+843.853 
+838.378 
+838.742 
+846.323 
+836.535 
+842.399 
+841.208 
+848.376 
+856.649 
+838.907 
+
+839.34 
+854.269 
+838.019 
+846.265 
+844.819 
+837.734 
+845.67 
+846.752 
+843.405 
+855.464 
+862.589 
+845.218 
+837.983 
+849.234 
+845.481 
+841.841 
+841.064 
+834.087 
+856.624 
+846.246 
+831.872 
+836.781 
+
+
+makes + 54.9571 -50.9628 =  0.02375
+
+from alpha_s +-0.002:
+down: 0.03134
+up 0.0337
+
+halved:
+down: 0.01567
+up: 0.01685
+
+total pdf with halved: 
+down: 0.0284537
+up: 0.0291202
+
+total PDF with full
+down: 0.0393225
+up: 0.0412281
+
+--- new using mtop=172.5
+
+rel PDF total: 0.00927636830775 
+
+alpha_s
+0: 830.91
+172.5        101        1        1        0.105995        804.484  :   0.03180368512 / 2 = 0.01590184256
+172.5        102        1        1        0.10931        858.516 : 0.0332238 / 2 = 0.0166119
+
+
+
+
+[global]
+name = NNPDF3.1
+[end global]
+
+
+The alpha_s dependence is not the right one, yet!!! This file should only be used
+for technical test, and for mtop extraction
+
+[nominal]
+#Format: <nominal> <scale up> <scale down> <pdf up> <pdf down>  PDF includes alpha_s!!
+#All errors as relative errors
+
+842.1  0.0360966631 0.02455765349  0.0166119 0.01590184256
+
+[end nominal]
+
+[mtop]
+166  995.771  
+168  941.147  
+170  890.012  
+172  842.1  
+174  797.217  
+176  755.131  
+178  715.634  
+
+[end mtop]
+
+
+[alpha_s]
+
+0.116 842.1 
+0.117 842.1
+0.118 842.1
+0.119 842.1
+0.120 842.1
+0.121 842.1
+0.122 842.1
+
+[end alpha_s]

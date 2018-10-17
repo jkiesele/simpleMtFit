@@ -46,11 +46,15 @@ int main(int argc, char* argv[]){
 	resmtop=tmp_ex.extractMtop();
 	std::cout << "scale 0: "<< resmtop.central << " + " << resmtop.errup << " - " << resmtop.errdown << std::endl;
 	tmp_ex.fixScaleVar(extractor::prior_fixedm1);
-	resmtop=tmp_ex.extractMtop();
-	std::cout << "scale -1: "<< resmtop.central << " + " << resmtop.errup << " - " << resmtop.errdown << std::endl;
+	auto resmtop2=tmp_ex.extractMtop();
+	std::cout << "scale -1: "<< resmtop2.central << " + " << resmtop2.errup << " - " << resmtop2.errdown << std::endl;
 	tmp_ex.fixScaleVar(extractor::prior_fixed1);
-	resmtop=tmp_ex.extractMtop();
-	std::cout << "scale 1: "<< resmtop.central << " + " << resmtop.errup << " - " << resmtop.errdown << std::endl;
+	auto resmtop3=tmp_ex.extractMtop();
+	std::cout << "scale 1: "<< resmtop3.central << " + " << resmtop3.errup << " - " << resmtop3.errdown << std::endl;
+
+	std::cout << resmtop.central << " + " << resmtop.errup << " - " << resmtop.errdown << "(PDF+as+fit) "
+			<< " " << resmtop2.central-resmtop.central <<" +" << resmtop3.central-resmtop.central << "(scale)"
+			<< std::endl;
 
 	return 0;
 

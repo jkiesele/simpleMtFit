@@ -1,0 +1,47 @@
+
+
+
+PDF only: 0.00932689098776
+as down= 0.0309771028/2 = 0.015488551
+as up = 0.0323787/2 = 0.01618935
+
+[global]
+name = NNPDF3.1
+[end global]
+
+
+The alpha_s dependence is not the right one, yet!!! This file should only be used
+for technical test, and for mtop extraction
+
+[nominal]
+#Format: <nominal> <scale up> <scale down> <pdf up> <pdf down>  PDF includes alpha_s!!
+#All errors as relative errors
+
+823.12  3.53093e-2 5.6704e-2  0.01808 0.0186838
+
+[end nominal]
+
+[mtop]
+
+166  973.369 
+168  919.956 
+170  869.951 
+172  823.12  
+174  779.243 
+176  738.084 
+178  699.462 
+
+[end mtop]
+
+
+[alpha_s]
+
+0.116 823.12   
+0.117 823.12  
+0.118 823.12  
+0.119 823.12  
+0.120 823.12  
+0.121 823.12  
+0.122 823.12  
+
+[end alpha_s]

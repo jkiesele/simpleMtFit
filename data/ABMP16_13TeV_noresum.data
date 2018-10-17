@@ -1,5 +1,7 @@
 
 
+This is done
+
 
 [global]
 name = ABMP16
@@ -13,7 +15,7 @@ for technical test, and for mtop extraction
 #Format: <nominal> <scale up> <scale down> <pdf up> <pdf down>  PDF includes alpha_s!!
 #All errors as relative errors
 
-750.826 0.05414969647  0.033495110  2.48059e-2  2.48059e-2 
+750.826   0.033495110 0.05414969647   2.48059e-2  2.48059e-2 
 
 [end nominal]
 

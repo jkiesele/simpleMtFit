@@ -1,0 +1,50 @@
+
+
+
+This is done
+
+
+[global]
+name = MMHT14
+[end global]
+
+
+The alpha_s dependence is not the right one, yet!!! This file should only be used
+for technical test, and for mtop extraction
+
+[nominal]
+#Format: <nominal> <scale up> <scale down> <pdf up> <pdf down>  PDF includes alpha_s!!
+#All errors as relative errors
+
+850.991   2.47353e-2  3.61464e-2  0.0260239   0.0237205 
+
+## 0.0210213739  0.01644788253  (plus alpha_s!)
+
+#alpha_s: -0.0153409378  +0.01709183763
+
+[end nominal]
+
+[mtop]
+
+166  1005.18  
+168  950.382  
+170  899.067  
+172  850.991  
+174  805.916  
+176  763.632  
+178  723.936  
+
+[end mtop]
+
+
+[alpha_s]
+
+0.116 850.991 
+0.117 850.991
+0.118 850.991
+0.119 850.991
+0.120 850.991
+0.121 850.991
+0.122 850.991
+
+[end alpha_s]

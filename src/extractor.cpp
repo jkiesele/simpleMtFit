@@ -39,9 +39,12 @@ extractResult extractor::extractPriv(bool ismtop){
     fitter.setParameters(startparas);
     ROOT::Math::Functor func(this,&extractor::toBeMinimized,startparas.size());
     fitter.setMinFunction(func);
-  //  fitter.setAsMinosParameter(freepara,true);
+    fitter.setAsMinosParameter(freepara,true);
     //set parameter limits for limted paras FIXME
 
+    fitter.fit();
+    fitter.feedErrorsToSteps();
+    fitter.setStrategy(2);
     fitter.fit();
 
     if(!fitter.wasSuccess())
@@ -130,6 +133,9 @@ double extractor::toBeMinimized(const double* pars)const{
     pdferr*=pred.eval(mtop,alphas,scale,0);
 
     pdferr*=pdferr;
+    //technically wrong, but ok, let's be consistent
+    err7*=pred.eval(mtop,alphas,scale,0)/globals::measured_xsec;
+
     err7*=err7;
 
     double out= (delta7*delta7)/(pdferr+err7);
