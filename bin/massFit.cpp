@@ -17,7 +17,7 @@
 #include "../include/fileReader.h"
 
 int main(int argc, char* argv[]){
-
+    globals::init();
 
 
 	//fileReader::debug=true;

@@ -11,9 +11,9 @@
 
 namespace globals{
 
-const double measured_xsec=815.;
-const double measured_errdown=35.2846;
-const double measured_errup=35.2846;
+extern double measured_xsec;
+extern double measured_errdown;
+extern double measured_errup;
 
 const double default_mtop=172.;
 const double default_alphas=0.118;
@@ -25,6 +25,8 @@ const double default_mtop_high=185;
 const double default_alphas_low=0.109;
 const double default_alphas_high=0.124;
 
+
+void init();
 }
 
 

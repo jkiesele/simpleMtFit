@@ -30,7 +30,7 @@ public:
 class extractor{
 public:
 
-	extractor():scaleprior_(prior_gauss){}
+	extractor():scaleprior_(prior_gauss), pdfscale_(1.){}
 
     prediction * readPrediction(const std::string& file);
 
@@ -39,6 +39,8 @@ public:
     const prediction& getPred()const{return pred;}
 
     enum priors{prior_gauss,prior_box,prior_free,prior_fixed1,prior_fixedm1,prior_fixed0};
+
+    void scalePDFUnc(double scale=1){pdfscale_=scale;}
 
     void fixScaleVar(priors p){
     	scaleprior_=p;
@@ -54,7 +56,7 @@ private:
     enum paranumbers{para_mtop=0,para_alphas=1,para_scale=2,para_pdf=3};
     priors scaleprior_;
     std::vector<priors> priors_;
-
+    double pdfscale_;
 
 };
 

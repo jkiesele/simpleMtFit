@@ -102,6 +102,7 @@ extractResult extractor::extractMtop()const{
     cpex.priors_.push_back(scaleprior_);
     cpex.priors_.push_back(prior_gauss);
 
+
     return cpex.extractPriv(true);
 }
 
@@ -132,6 +133,8 @@ double extractor::toBeMinimized(const double* pars)const{
     	pdferr=pred.getRelPdfDown();
     pdferr*=pred.eval(mtop,alphas,scale,0);
 
+    pdferr *= pdfscale_;
+
     pdferr*=pdferr;
     //technically wrong, but ok, let's be consistent
     err7*=pred.eval(mtop,alphas,scale,0)/globals::measured_xsec;
@@ -153,6 +156,8 @@ double extractor::toBeMinimized(const double* pars)const{
                 delta/=globals::default_alphas_err;
                 out+=delta*delta;
             }
+            else if(i==para_pdf)
+                out+=pdfscale_*pdfscale_*pars[i]*pars[i];
             else
                 out+=pars[i]*pars[i];
         }
