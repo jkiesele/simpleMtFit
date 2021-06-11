@@ -353,12 +353,12 @@ int main(int argc, char* argv[]){
 
 
 	//fileReader::debug=true;
-    std::string predfile;
-	if(argc<2){
-	    predfile="data/ABMP16_13TeV.data";
+    std::string predfile="data/ABMP16_13TeV.data";
+	if(argc>=2){
+	    predfile = argv[1];
 	}
 
-	predfile = argv[1];
+
 
 	std::cout << "PDF " << predfile <<std::endl;
 	extractor tmp_ex;
