@@ -398,9 +398,14 @@ int main(int argc, char* argv[]){
 	mxsec_run2 = outgraphs.at(0);
     mxsec_yr = outgraphs.at(1);
 
+    double lumirangemin=0.31, lumirangemax=4.5;
+    auto axis= makeAxisHist(0, lumirangemin, lumirangemax);
 
-	TCanvas * cv = createCanvas();
-	TH1F axis= *outgraphs.at(0)->GetHistogram();
+    TCanvas * cv = createCanvas();
+    TLegend * leg=0;
+/*
+
+
     setDefaultAxis(axis);
     axis.Draw("AXIS");
     axis.GetYaxis()->SetRangeUser(1.1, 1.5);
@@ -410,20 +415,20 @@ int main(int argc, char* argv[]){
     axis.GetXaxis()->SetTitle("#Delta(luminosity) [%]");
 
     TLegend * leg=new TLegend(0.57,0.22,0.85,0.44);
-    leg->SetFillStyle(0);
-    leg->SetBorderSize(0);
+   // leg->SetFillStyle(0);
+    //leg->SetBorderSize(0);
 
 	for(size_t i=0;i<outgraphs.size();i++){
 
 	    auto g = outgraphs.at(i);
 	    drawDoubleLine(g, line_styles.at(i),colours.at(i));
-        leg->AddEntry(g,g->GetTitle(),"lp");
+        leg->AddEntry(g,g->GetTitle(),"l");
 	}
 
 	leg->Draw("same");
 	drawLogos();
 	cv->Print("meas_lumi.pdf");
-
+*/
 
 	outgraphs.clear();
 	names = {
@@ -458,7 +463,7 @@ int main(int argc, char* argv[]){
 
 
 	cv = createCanvas();
-    axis= *outgraphs.at(0)->GetHistogram();
+    axis= makeAxisHist(0, lumirangemin, lumirangemax);
     setDefaultAxis(axis);
     axis.Draw("AXIS");
     axis.GetYaxis()->SetRangeUser(0.65, 1.4);
@@ -473,7 +478,7 @@ int main(int argc, char* argv[]){
     for(size_t i=0;i<outgraphs.size();i++){
         auto g = outgraphs.at(i);
         drawDoubleLine(g, line_styles.at(i),colours.at(i));
-        leg->AddEntry(g,g->GetTitle(),"lp");
+        leg->AddEntry(g,g->GetTitle(),"l");
     }
 
     leg->Draw("same");
@@ -493,7 +498,7 @@ int main(int argc, char* argv[]){
         outgraphs.push_back(g);
     }
     cv = createCanvas();
-    axis= *outgraphs.at(0)->GetHistogram();
+    axis= makeAxisHist(0, lumirangemin, lumirangemax);
     setDefaultAxis(axis);
     axis.Draw("AXIS");
     axis.GetYaxis()->SetRangeUser(1.0, 5.0);
@@ -502,13 +507,31 @@ int main(int argc, char* argv[]){
     axis.GetYaxis()->SetTitle("#Delta_{tot}(#sigma_{t#bar{t}}) [%]");
     axis.GetXaxis()->SetTitle("#Delta(luminosity) [%]");
 
-    leg=new TLegend(0.60,0.2,0.87,0.35);
+
+    //leg->SetNColumns(1);
+    //leg->SetBBoxY1(0.17);
+    float xlegoff=0;
+    float ylegoff=0.1;
+    auto box = new TPave(0.58,0.18+ylegoff,0.86,0.35+ylegoff);
+    //box->SetX1NDC(.6);
+    //box->SetY1NDC(.1);
+    //box->SetX2NDC(.87);
+    //box->SetY2NDC(.35);
+    box->SetFillStyle(1);
+    box->SetFillColor(kWhite);
+    box->SetLineColor(kBlack);
+    //box->SetLineWidth(1.);
+    box->Paint("NDC,same");
+    box->Draw("NDC,same");
+
+    leg=new TLegend(0.58,0.2+ylegoff,0.85,0.35+ylegoff);
     leg->SetBorderSize(0);
+    leg->SetFillStyle(0);
 
     for(size_t i=0;i<outgraphs.size();i++){
         auto g = outgraphs.at(i);
         drawDoubleLine(g, line_styles.at(i),colours.at(2*i));
-        leg->AddEntry(g,g->GetTitle(),"lp");
+        leg->AddEntry(g,g->GetTitle(),"l");
     }
 
     leg->Draw("same");
@@ -557,12 +580,12 @@ int main(int argc, char* argv[]){
 
 
 
-    double legendleft = 0.67;
-    double legendright = 0.89;
+    double legendleft = 0.65;
+    double legendright = 0.87;
     double legendlow = 0.3;
     double legendheight=0.5;
 
-    axis= makeAxisHist(0, 0.45, 3.95); //*as_noscale->GetHistogram();
+    axis= makeAxisHist(0, lumirangemin, lumirangemax); //*as_noscale->GetHistogram();
     setDefaultAxis(axis);
     axis.Draw("AXIS");
 
@@ -582,14 +605,10 @@ int main(int argc, char* argv[]){
     //leg->SetBorderSize(0);
    // leg->SetFillStyle(0);
 
-    drawDoubleLine(as_full, 1,colours.at(0));
-
-    drawDoubleLine(as_nopdf, 1,colours.at(2));
-
-    drawDoubleLine(as_noscale, 1,colours.at(1));
-
-
-    drawDoubleLine(as_nopdf_noscale, 1,colours.at(3));
+    drawDoubleLine(as_full, 1,colours.at(1));
+    drawDoubleLine(as_noscale, 1,colours.at(3));
+    drawDoubleLine(as_nopdf, 1,colours.at(0));
+    drawDoubleLine(as_nopdf_noscale, 1,colours.at(2));
 
     if(do_half_unc){
         leg->AddEntry(as_full,"Full #Delta(theo)","l");
@@ -617,10 +636,10 @@ int main(int argc, char* argv[]){
     mt_nopdf_noscale = performExtraction(predfile,meas_uncs.at(1),reduced,reduced, "mt_nopdf_noscale");
 
 
-    drawDoubleLine(mt_full,        2,colours.at(0));
-    drawDoubleLine(mt_noscale,        2,colours.at(1));
-    drawDoubleLine(mt_nopdf,          2,colours.at(2));
-    drawDoubleLine(mt_nopdf_noscale, 2,colours.at(3));
+    drawDoubleLine(mt_full,        2,colours.at(1));
+    drawDoubleLine(mt_noscale,        2,colours.at(0));
+    drawDoubleLine(mt_nopdf,          2,colours.at(3));
+    drawDoubleLine(mt_nopdf_noscale, 2,colours.at(2));
 
     leg->Draw("same");
 
@@ -633,7 +652,7 @@ int main(int argc, char* argv[]){
 
 
     cv = createCanvas();
-    axis= makeAxisHist(0, 0.45, 3.95); //*as_noscale->GetHistogram();
+    axis= makeAxisHist(0, lumirangemin, lumirangemax); //*as_noscale->GetHistogram();
     setDefaultAxis(axis);
     axis.Draw("AXIS");
 
@@ -646,8 +665,8 @@ int main(int argc, char* argv[]){
     leg=new TLegend(legendleft,legendlow+0.05,legendright,legendlow+legendheight-0.05);
     leg->SetNColumns(1);
 
-    drawDoubleLine(as_full, 1,colours.at(0));
-    drawDoubleLine(as_nopdf_noscale, 1,colours.at(2));
+    drawDoubleLine(as_full, 1,colours.at(1));
+    drawDoubleLine(as_nopdf_noscale, 1,colours.at(3));
 
 
     leg->AddEntry(as_full,"Full #Delta(theo)","l");
@@ -655,8 +674,8 @@ int main(int argc, char* argv[]){
 
 
 
-    drawDoubleLine(mt_full,        2,colours.at(0));
-    drawDoubleLine(mt_nopdf_noscale, 2,colours.at(2));
+    drawDoubleLine(mt_full,        2,colours.at(1));
+    drawDoubleLine(mt_nopdf_noscale, 2,colours.at(3));
 
     leg->Draw("same");
 
